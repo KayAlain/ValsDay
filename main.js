@@ -36,7 +36,7 @@ var currentQuestion = 1;
             videoPlayer.style.display = "block";
             
             // Set the video source and play the video
-            videoPlayer.src = "/vid/vid3.mp4";
+            videoPlayer.src = "/vid/vid3 (2).mp4";
             videoPlayer.play();
         }
 
