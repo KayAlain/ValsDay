@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY QUEEN</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/abf76409d3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="question-container">
+        <div class="question" id="question1"></div>
+        <div class="question" id="question2">From miles apart to being right here, our journey has been nothing short of amazing.💖</div>
+        <div class="question" id="question3">I'm so grateful for the path that brought us from long distance to this moment. Every moment with you feels like a dream come true. 😊</div>
+        <div class="question" id="question4">Who would have thought that the love we cultivated over long distances would blossom into the beautiful togetherness we share now? 🌹</div>
+        <div class="question" id="question5">Remember when our love defied the miles? Now, it's as close as your smile. 😊</div>
+        <div class="question" id="question6">The transition from being miles apart to having you by my side every day has been the best part of our love story. 💑</div>
+        <div class="question" id="question7">Our love story was like a long-distance novel, and now it's a book we write together with each passing day. 📖</div>
+        <div class="question" id="question8">Patience truly is a virtue. Our love has blossomed beautifully, from waiting to finally being together. ❤️</div>
+        <div class="question" id="question9">Distance couldn't keep us apart. Now, let's celebrate the joy of being close, hand in hand. 🤝</div>
+        <div class="question" id="question10">Our love story has chapters of longing, patience, and now, togetherness. Each chapter is special, but this one is my favorite. 💕</div>
+        <div class="question" id="question11">Our journey from miles apart to being together has been nothing short of magical. </div>
+       
+        <button class="btn-next" onclick="showNextQuestion()">Tap/Click</button>
+    </div>
+
+    <div class="container" style="display: none;" id="mainContainer">
+        <h1>
+            <span class="auto-type"></span>
+        </h1>
+        <div class="btns">
+            <button class="btn-1 button" onclick="showModal()">Yessss Babyy Finally!</button>
+            <button class="btn-2 button" onclick="showCautionAlert()">No Way! YUK!</button>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <p>YOU ALWAYS WERE BABY!</p>
+            <button class="close-btn" onclick="playVideo()">One Last Thing</button>
+            <video id="videoPlayer" width="640" height="360" controls playsinline style="margin-top: 10px;">
+               
+            </video>
+        </div>
+    </div>
+
+       
+        <script src="main.js"></script>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["WILL", "YOU", "BE", "MY", "VALENTINES?"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        })
+      </script>
+</body>
+</html>
