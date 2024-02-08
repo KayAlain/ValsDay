@@ -25,24 +25,7 @@ var currentQuestion = 1;
             modal.style.display = "flex"; // Display the modal
         }
 
-        function playVideo() {
-            var videoPlayer = document.getElementById("videoPlayer");
-            var watchVideoButton = document.querySelector(".close-btn");
-            
-            // Hide the "Watch Video" button
-            watchVideoButton.style.display = "none";
-
-            // Show the video player
-            videoPlayer.style.display = "block";
-            
-            // Set the video source and play the video
-            videoPlayer.src = "/vid/vid1.mp4";
-            videoPlayer.play();
+        function openICloudLink() {
+            // Open the iCloud link in a new tab or window
+            window.open("https://share.icloud.com/photos/0f5C4d-hCFjztyn4Fz8Ffzl-A", "_blank");
         }
-
-        // function playVideo() {
-        //     var videoPlayer = document.getElementById("videoPlayer");
-        //     videoPlayer.style.display = "block";
-        //     videoPlayer.src = "#"; // Set the video source
-        //     videoPlayer.play(); // Play the video
-        // }
